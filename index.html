@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turfball</title>
+    
+    <!-- External Styles & Scripts -->
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="home">
+
+<!-- ✅ HEADER SECTION -->
+<header>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container d-flex align-items-right">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#home">
+        <img src= "logo.webp" class="logo">
+      </a>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-right" id="navbarNav">
+        <ul class="navbar-nav d-flex gap-10">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bookings">Bookings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#account">Account</a></li>
+        </ul>
+      </div>
+
+      <!-- Sign-In Button -->
+      <a class="btn btn-primary sign-in-btn ms-auto" href="signin.html">Sign In</a>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<!-- ✅ BACKGROUND VIDEO -->
+<main>
+  <section id="home">
+    <video width="100%" height="auto" autoplay muted loop>
+      <source src="turfball.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- ✅ PRODUCT SECTIONS (3 ROWS) -->
+  <section id="bookings" class="row">
+    <h1>Book Your Turf</h1>
+
+    <div class="row">
+      <!-- ✅ Arena One -->
+      <div class="col-md-4 Product">
+        <h3>Arena One</h3>
+        <a href="forms.html">Galleria</a>
+        <img src="product1.jpeg" alt="Arena One">
+        <p>Located at Galleria.</p>
+      </div>
+
+      <!-- ✅ South C -->
+      <div class="col-md-4 Product">
+        <h3>South C</h3>
+        <a href="forms.html">South C</a>
+        <img src="product2.jpeg" alt="South C">
+        <p>Located at South C.</p>
+      </div>
+
+      <!-- ✅ Parklands -->
+      <div class="col-md-4 Product">
+        <h3>Parklands</h3>
+        <a href="forms.html">Parklands</a>
+        <img src="product3.jpeg" alt="Parklands">
+        <p>Located at City Park.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ FEEDBACK FORM -->
+  <section id="feedback" class="row">
+    <h2>Submit Feedback</h2>
+    <form id="feedbackForm">
+      <label for="user">User:</label>
+      <input type="text" id="user" name="user" required>
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" required></textarea>
+
+      <label for="rating">Rating:</label>
+      <input type="number" id="rating" name="rating" min="1" max="10" required>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+</main>
+
+<h2>Book Your Venue</h2>
+<form action="mailto:asadmasudkhan251@gmail.com" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    
+    <label for="date">Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="time">Time:</label><br>
+    <input type="time" id="time" name="time" required><br><br>
+    
+    <label for="venue">Venue:</label><br>
+    <select id="venue" name="venue" required>
+        <option value="">Select Venue</option>
+        <option value="Hall A">Hall A</option>
+        <option value="Hall B">Hall B</option>
+        <option value="Outdoor Garden">Outdoor Garden</option>
+    </select><br><br>
+    
+    <label for="guests">Number of Guests:</label><br>
+    <input type="number" id="guests" name="guests" required><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+<!-- ✅ FOOTER AREA -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Turfball. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
